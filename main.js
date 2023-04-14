@@ -49,6 +49,7 @@ let todo_list = [
     }
 ]
 //######################### fake data ##############################
+// Todo list Home Page
 app.get('/Todos', (req, res) => {
     res.render('comments/comments.ejs', { todo_list })
 })
