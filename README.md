@@ -35,7 +35,7 @@ You will route to home page with new Todo you create:
 Click "details" of Todo you want to edit:
 ![patch](https://user-images.githubusercontent.com/78125534/232206567-5bfaf2a3-6c8a-4cad-ad25-ffd86f0c113d.png)  
 Click the link "Edit Todo information", you will route to edit.ejs page:  
-![patch_2](https://user-images.githubusercontent.com/78125534/232206665-33a72c14-f039-4fda-be43-ff734a44f118.png)
+![patch_5](https://user-images.githubusercontent.com/78125534/232207437-8f31fa0c-1257-42be-8873-058dba96eeb6.png)
 ![image](https://user-images.githubusercontent.com/78125534/232206678-545e2a46-47a0-447c-9fc8-f64a9629302a.png)  
 Edit the information you want, the click "save" button:
 ![patch_3](https://user-images.githubusercontent.com/78125534/232206756-f7757cd6-6f57-451f-a65b-3046e8fb5f1d.png)  
