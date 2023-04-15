@@ -12,7 +12,13 @@
     <!-- action的終端位置必須跟，要求觸發的終端位置相同( app.patch('/comments/:id',....... ) -->
     <!-- 在這裡request的動作是 patch對patch -->
     <form method="POST" action="/Todos/<%= todo.id %>?_method=PATCH">
-        <h1>Enter your editting todo completed status:</h1>
+        <label for="title">
+            <h1>Editting todo title:</h1>
+        </label>
+        <input type="text" id="title" name="title" value="<%= todo.Title %>">
+        <br>
+
+        <h1>Editting todo completed status:</h1>
         <br>
         <label for="completed_true">True</label>
         <input type="radio" id="completed_true" name="completed_status" value=true>
@@ -20,7 +26,7 @@
         <label for="completed_false">False</label>
         <input type="radio" id="completed_false" name="completed_status" value=false checked="checked">
 
-        <h1><label for="description">Enter your editting comment:</label></h1>
+        <h1><label for="description">Editting Description:</label></h1>
         <br>
         <textarea id="description" cols="30" rows="5" placeholder="description" name="description">
             <%= todo.Description  %>

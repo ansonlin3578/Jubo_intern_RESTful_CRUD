@@ -79,7 +79,8 @@ app.get('/Todos/:id', (req, res) => {
 app.patch('/Todos/:id', (req, res) => {
     const { id } = req.params;
     const todo = todo_list.find(todo => todo.id === id);
-    const { completed_status, description } = req.body;
+    const { title, completed_status, description } = req.body;
+    todo.Title = title;
     todo.Completed = completed_status;
     todo.Description = description;
     res.redirect('/Todos');
@@ -88,7 +89,6 @@ app.patch('/Todos/:id', (req, res) => {
 app.get('/Todos/:id/edit', (req, res) => {
     const { id } = req.params;
     const todo = todo_list.find((todo) => todo.id === (id));
-    console.log(todo)
     res.render('comments/edit.ejs', { todo });
 })
 
