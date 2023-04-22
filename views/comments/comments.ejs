@@ -6,31 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app.css">
     <script scr="/js/jquery-3.6.4.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <title>Total todo_list Page</title>
 </head>
 
 <body>
-    <h1>Total todo_list Page</h1>
-    <ul>
-        <% for(let todo of todo_list){%>
-            <li>
-                <div>
-                    <b>
-                        <%=todo.Title %>
-                    </b>
-                    - Completed: <%=todo.Completed%>
-                </div>
-                Description:
-                <%=todo.Description %>
+    <section id="container">
+        <div>
+            <h1 class="is_h1">Total todo_list Page</h1>
+        </div>
+        <div>
+            <ul>
+                <% for(let todo of todo_list){%>
+                    <li class="Todo">
+                        <div>
+                            <b>
+                                <%=todo.Title %>
+                            </b>
+                            - Completed: <%=todo.Completed%>
+                        </div>
+                        Description:
+                        <%=todo.Description %>
 
-                    <a href="/Todos/<%=todo.id %>">details</a>
-            </li>
-            <br>
-            <% }%>
-    </ul>
-    <a href="/Todos/new">Add new Todo</a>
+                            <a href="/Todos/<%=todo.id %>">details</a>
+                    </li>
+                    <br>
+                    <% }%>
+            </ul>
+        </div>
+        <div class="block">
+            <a href="/Todos/new">Add new Todo</a>
+        </div>
+    </section>
 </body>
 
 </html>

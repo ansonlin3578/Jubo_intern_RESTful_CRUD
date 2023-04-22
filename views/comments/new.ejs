@@ -6,32 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app.css">
     <title>Add Todo</title>
 </head>
 
 <body>
-    <h1>ADDING Todo</h1>
-    <form action="/Todos" method="post">
-        <section>
-            <label for="title">Enter your Todo Title</label>
-            <input type="text" , id="title" , placeholder="Title" , name="title">
-        </section>
-        <section>
-            <label for="description">Enter your description</label>
-            <br>
-            <textarea id="description" cols="30" rows="5" placeholder="Description" name="description"></textarea>
-        </section>
-        <section>
-            <b>Enter your completed status</b>
-            <br>
-            <label for="completed_true">True</label>
-            <input type="radio" id="completed_true" name="completed_status" value=true>
-            <label for="completed_false">False</label>
-            <input type="radio" id="completed_false" name="completed_status" value=false checked="checked">
-        </section>
-        <button>Submit</button>
-    </form>
-    <a href="/Todos">Back to All comments</a>
+    <section id="container">
+        <h1 class="is_h1">ADDING Todo</h1>
+        <form action="/Todos" method="post">
+            <section>
+                <label for="title">Enter your Todo Title</label>
+                <input type="text" , id="title" , placeholder="Title" , name="title">
+            </section>
+            <section>
+                <label for="description">Enter your description</label>
+                <br>
+                <textarea id="description" cols="30" rows="5" placeholder="Description" name="description"></textarea>
+            </section>
+            <section>
+                <b>Enter your completed status</b>
+                <br>
+                <label for="completed_true">True</label>
+                <input type="radio" id="completed_true" name="completed_status" value=true>
+                <label for="completed_false">False</label>
+                <input type="radio" id="completed_false" name="completed_status" value=false checked="checked">
+            </section>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <a href="/Todos"
+            class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to All
+            comments</a>
+    </section>
 </body>
 
 </html>
